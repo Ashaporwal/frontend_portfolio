@@ -19,7 +19,7 @@ const Newsletter = () => {
 
     try {
 
-      const res = await axios.post("http://localhost:3000/subscribes/saveemails", { email });
+      const res = await axios.post("https://backend-portfolio-1-ufz6.onrender.com/subscribes/saveemails", { email });
 
       setMessage(res.data.message);
       setEmail("");

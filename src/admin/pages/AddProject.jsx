@@ -23,7 +23,7 @@ const AddProject = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/projects/addProject",
+        "https://backend-portfolio-1-ufz6.onrender.com/projects/addProject",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
@@ -39,7 +39,7 @@ const AddProject = () => {
       }
     } catch (err) {
       console.error(err);
-      toast.error("Error adding project ❌");
+      toast.error("Error adding project ");
     }
   };
 

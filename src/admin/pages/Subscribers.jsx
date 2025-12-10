@@ -7,7 +7,7 @@ const Subscribers = () => {
   useEffect(() => {
     const fetchSubscribers = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/subscribes/getmails");
+        const response = await axios.get("https://backend-portfolio-1-ufz6.onrender.com/subscribes/getmails");
         setSubscribers(response.data.subscriber);
       } catch (err) {
         console.error(err);

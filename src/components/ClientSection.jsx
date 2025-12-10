@@ -8,7 +8,7 @@ const ClientsSection = () => {
     const fetchClients = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/clients/getClients"
+          "https://backend-portfolio-1-ufz6.onrender.com/clients/getClients"
         );
         setClients(response.data.clientList);
       } catch (error) {
@@ -68,7 +68,7 @@ const ClientsSection = () => {
               }}
             >
               <img
-                src={`http://localhost:3000/${client.image}`}
+                src={`https://backend-portfolio-1-ufz6.onrender.com/${client.image}`}
                 alt={client.name}
                 style={{
                   width: "120px",

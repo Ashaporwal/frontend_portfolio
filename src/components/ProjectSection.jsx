@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import ContactForm from "./ContactForm"; // Ensure path correct ho
+import ContactForm from "./ContactForm"; 
 
 const ProjectSection = () => {
   const [projects, setProjects] = useState([]);
@@ -9,7 +9,7 @@ const ProjectSection = () => {
     const fetchProjects = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/projects/getProject"
+          "https://backend-portfolio-1-ufz6.onrender.com/projects/getProject"
         );
         setProjects(response.data.project);
       } catch (error) {
@@ -160,7 +160,7 @@ const ProjectSection = () => {
               >
                 <div style={{ height: "150px" }}>
                   <img
-                    src={`http://localhost:3000/${project.image}`}
+                    src={`https://backend-portfolio-1-ufz6.onrender.com/${project.image}`}
                     alt={project.name}
                     style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   />

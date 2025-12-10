@@ -30,7 +30,7 @@ const AddClient = () => {
     formData.append("image", clientData.image);
 
     try {
-      await axios.post("http://localhost:3000/clients/addClient", formData);
+      await axios.post("https://backend-portfolio-1-ufz6.onrender.com/clients/addClient", formData);
 
       toast.success("Client added successfully "); 
 

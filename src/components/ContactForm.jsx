@@ -20,7 +20,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:3000/contacts/addContact",formData);
+      const response = await axios.post("https://backend-portfolio-1-ufz6.onrender.com/contacts/addContact",formData);
       setMessage(response.data.message);
       setFormData({ name: "", email: "", mobile: "", city: "" }); // clear form
     } catch (error) {

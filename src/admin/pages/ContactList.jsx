@@ -7,7 +7,7 @@ const ContactList = () => {
   const fetchContacts = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/contacts/getContacts"
+        "https://backend-portfolio-1-ufz6.onrender.com/contacts/getContacts"
       );
       setContacts(response.data.contacts);
     } catch (error) {

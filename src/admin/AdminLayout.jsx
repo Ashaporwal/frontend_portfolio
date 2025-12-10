@@ -30,7 +30,7 @@ const AdminLayout = () => {
   );
 };
 
-// Simple button style
+
 const btn = {
   padding: "10px 15px",
   marginRight: "10px",
